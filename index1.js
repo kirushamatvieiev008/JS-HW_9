@@ -19,23 +19,11 @@
 
 // task 3
 
-const y = prompt(`enter one sentance`);
-let c = y.split(` `);
-// console.log(c.length);
-let w = [];
-
-
-const findLongestWord = function(string) {
-    for (let i = 0; i < string.length; i ++) {
-        w.push(c[i].length);
-        console.log(Math.max(...w));
-        
-        // console.log(w);
-        
-    }
-    // console.log(w);
-    
+const string = prompt(`enter your sentanse`);
+const mstring = string.split(` `);
+let mNums = []
+for (let i = 0; i < mstring.length; i ++) {
+  mNums.push(mstring[i].length);
+  
 }
-
-findLongestWord(c)
-
+console.log(Math.max(...mNums));
